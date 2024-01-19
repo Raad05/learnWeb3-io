@@ -19,12 +19,14 @@ const main = async () => {
   await sleep(30 * 1000);
   console.log("Contract deployed successfully.");
 
-  // Verify the contract on etherscan
-  //   await run("verify:verify", {
-  //     address: contractAddress,
-  //     constructorArguments: [10],
-  //   });
+  //   Verify the contract on etherscan
+  await run("verify:verify", {
+    address: contractAddress,
+    constructorArguments: [10],
+  });
+  console.log("Contract verified on etherscan.");
 };
+
 main()
   .then(() => process.exit(0))
   .catch((err) => {
