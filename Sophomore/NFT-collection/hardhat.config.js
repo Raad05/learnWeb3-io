@@ -8,7 +8,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const ETHERSCAN_API = process.env.ETHERSCAN_API;
 
 module.exports = {
-  solidity: "0.8.19",
+  solidity: "0.8.20",
   networks: {
     sepolia: {
       url: ALCHEMY_RPC_URL,
